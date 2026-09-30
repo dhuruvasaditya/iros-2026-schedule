@@ -408,6 +408,25 @@ details.wsd[open] .chev{transform:rotate(45deg); color:var(--accent)}
   details.wsd > summary{padding:14px 13px}
   .wsd .st{font-size:14px}
 }
+.toppicks{background:var(--surface); border:1px solid var(--accent); border-radius:3px; padding:18px 18px 16px; display:flex; flex-direction:column; gap:12px}
+.toppicks > h3{font-family:Archivo,sans-serif; font-size:15px; font-weight:700; margin:0; letter-spacing:-.01em}
+.plan{background:var(--surface-2); border-left:3px solid var(--accent); border-radius:2px; padding:12px 14px; font-size:13px; color:var(--ink-2); line-height:1.58}
+.plan b{color:var(--ink)}
+.plan .sl{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+details.wsd.top{border-color:var(--rule)}
+details.wsd.top[open]{border-color:var(--accent)}
+.wsd .why{font-size:13px; color:var(--ink-2); line-height:1.55; border-left:2px solid var(--accent); padding-left:11px}
+.liked{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:9.5px; font-weight:600; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--surface); background:var(--accent); border-radius:2px; padding:2px 6px; margin-left:7px; vertical-align:1px}
+.runners{display:flex; flex-direction:column; gap:0; margin-top:2px}
+.runners .rh{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:8px 0 5px}
+.runners li{display:grid; grid-template-columns:86px 1fr; gap:12px; padding:7px 0; border-top:1px solid var(--rule-soft); font-size:12.5px; align-items:baseline}
+.runners ul{list-style:none; margin:0; padding:0}
+.runners .s{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted)}
+.runners a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule-soft)}
+.runners a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+.allhd{font-family:Archivo,sans-serif; font-size:15px; font-weight:600; margin:22px 0 -4px; letter-spacing:-.01em}
+@media (max-width:720px){ .runners li{grid-template-columns:1fr; gap:1px} }
 a{color:var(--accent)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
 @media (max-width:720px){
@@ -428,9 +447,87 @@ a{color:var(--accent)}
 <section class="thu" id="thursday">
   <div class="thu-head">
     <div class="eyebrow">Thursday 1 October &middot; final day</div>
-    <h2 class="t">All 42 Thursday workshops</h2>
-    <p class="thu-sub">The paper program ends Wednesday; Thursday is workshops only. Tap any workshop to read its full abstract and open its site. Within each block they are ordered by how closely they match tactile and VLA work, so the most relevant sit at the top. 17 run all day, 13 in the morning, 12 in the afternoon &mdash; you can attend one full-day workshop, or one morning plus one afternoon.</p>
+    <h2 class="t">Thursday workshops &mdash; the five that matter</h2>
+    <p class="thu-sub">The paper program ends Wednesday; Thursday is workshops only. The shortlist below is filtered to genuinely tactile and VLA work, with the abstracts read rather than keyword-matched. All 42 follow underneath, ordered by relevance within each block. Tap any workshop for its full abstract and site. 17 run all day, 13 in the morning, 12 in the afternoon &mdash; you can attend one full-day workshop, or one morning plus one afternoon.</p>
   </div>
+  <div class="toppicks">
+    <h3>The five worth your day</h3>
+    <div class="plan">
+      <b>Suggested plan.</b> The one you flagged is a morning slot, and it clashes head-on with the best tactile workshop of the week. Taking your pick, the clean day is:<br>
+      <span class="sl">8:30&ndash;12:30</span> <b>Building Scalable Infrastructure for Robot Learning</b> &middot; Rooms 317 &amp; 318 &mdash; VLA<br>
+      <span class="sl">13:30&ndash;17:30</span> <b>Touch-to-Action</b> &middot; Rooms 403 &amp; 404 &mdash; tactile<br>
+      That gives you one of each with no clash. The trade is that you give up <b>Haptic Feedback</b>, which is the strongest tactile workshop here and runs in the same morning slot &mdash; worth sending Archer to it if he is around.
+    </div>
+    <details class="wsd top">
+      <summary>
+        <span><span class="st">Enhancing Dexterous Manipulation Through Haptic Feedback</span><span class="ttag tactile">Tactile</span><span class="sm">Morning &middot; Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 403 &amp; 404</span></span>
+        <span class="chev" aria-hidden="true">+</span>
+      </summary>
+      <div class="body">
+        <p class="why">The densest tactile workshop of the entire conference &mdash; tactile sensing, haptic feedback, contact modelling and interface design as one pipeline. If you only do one tactile thing on Thursday, this is it.</p>
+        <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 403 &amp; 404</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+        <p class="ab">Enhancing Dexterous Manipulation Through Haptic Feedback is a half-day workshop dedicated to exploring the growing role of haptics in enabling dexterous robotic manipulation. As robots are deployed in increasingly complex and unstructured environments, the ability to perceive and respond to physical interaction is becoming fundamental for robust, adaptive, and dexterous manipulation. From tactile sensing and haptic feedback to contact modeling and interface design, haptic technologies are enabling robots to manipulate objects with greater dexterity, adapt to uncertain interactions, and perform increasingly complex manipulation tasks. This workshop will bring together researchers across robotics, haptics, tactile sensing, and human perception to discuss recent advances, identify critical research challenges, and explore emerging applications of haptic-enabled manipulation. The program will feature invited talks from leading experts, an interactive panel discussion on future directions for the field, and technical discussions designed to foster collaboration across disciplines. In addition, the workshop will include a poster session open to researchers at all career stages, providing an opportunity to present ongoing work, exchange ideas, and network with the community. A Best Poster Award will recognize an outstanding contribution presented during the workshop. We welcome participation from researchers working in robotic manipulation, haptic feedback, tactile sensing, teleoperation, human&ndash;robot interaction, soft robotics, and related fields. The workshop aims to strengthen collaboration across these communities and help shape the future of haptics as a key enabling technology for dexterous robotic manipulation.</p>
+        <a class="go" href="https://hapticsworkshop.github.io/IROSHapticsWorkshop/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+      </div>
+    </details>
+    <details class="wsd top">
+      <summary>
+        <span><span class="st">Building Scalable Infrastructure for Robot Learning: From Data Scaling to Real-World Deployment</span><span class="ttag vla">VLA</span><span class="liked">You liked this</span><span class="sm">Morning &middot; Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 317 &amp; 318</span></span>
+        <span class="chev" aria-hidden="true">+</span>
+      </summary>
+      <div class="body">
+        <p class="why">Names Vision-Language-Action and embodied foundation models up front, then goes after the system around them: data acquisition, post-training, evaluation, deployment. The infrastructure problem, not the model problem.</p>
+        <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 317 &amp; 318</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+        <p class="ab">Recent advances in robot learning, including Vision-Language-Action models and embodied foundation models, have shown promising progress toward general-purpose robots. However, scaling robot learning beyond laboratory demonstrations is increasingly constrained by system-level challenges rather than model architectures alone. Large-scale data acquisition, scalable post-training, reliable evaluation, and real-world deployment infrastructure remain fragmented across different research efforts. This workshop focuses on the end-to-end infrastructure needed for scalable robot learning, covering the full lifecycle from data scaling to real-world deployment. The program will bring together researchers and practitioners from robotics, embodied AI, machine learning systems, computer vision, reinforcement learning, and industry to discuss four interconnected topics, i.e., data scaling, training and post-training, evaluation, and deployment infrastructure. The workshop welcomes research papers, system and infrastructure reports, benchmarks, work in progress, and negative or failure-case studies that provide practical insights for the community. The workshop will feature invited talks, selected paper presentations, and interactive posters. It aims to connect algorithmic innovation with engineering practice. We are also pleased to host the ATEC 2026 Pittsburgh Real-World Preliminary Challenge as a competition track, providing teams with an opportunity to evaluate embodied AI systems on physical robotic platforms under realistic conditions. Through this workshop, we aim to clarify shared infrastructure challenges, promote reproducible evaluation and deployment practices, and catalyze reusable system design principles for scaling robot learning in real-world environments.</p>
+        <a class="go" href="https://scale-infra.github.io/iros2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+      </div>
+    </details>
+    <details class="wsd top">
+      <summary>
+        <span><span class="st">Touch-to-Action: Enhancing Robot Manipulation through Tactile Perception</span><span class="ttag tactile">Tactile</span><span class="sm">Afternoon &middot; Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 403 &amp; 404</span></span>
+        <span class="chev" aria-hidden="true">+</span>
+      </summary>
+      <div class="body">
+        <p class="why">A full vertical roadmap for tactile manipulation &mdash; bioinspiration, sensor design and fabrication, simulation, perception, control. Opens by arguing touch is still fragmented next to vision.</p>
+        <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 403 &amp; 404</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+        <p class="ab">Tactile sensing is fundamental for humans to perceive the world and manipulate objects. In robotics, Artificial Intelligence (AI) is transforming manipulation by leveraging proprioception, vision, and language. However, touch in manipulation remains underexplored, with research still fragmented compared to other sensing modalities (e.g., vision), which benefit from standardized technologies. The Touch-to-Action workshop provides a roadmap to tactile sensing and manipulation with a vertical approach, bridging bioinspiration, sensor design and fabrication, simulation, perception, and control. First, we review the biological sense of touch and how it guides the development of robotic tactile sensors, setting the fundamentals for subsequent technical sessions. Then, we cover tactile sensor technologies, including transduction principles, design and fabrication methods, and integration strategies. We also address the promising role of simulation, from supporting optimal sensor design to facilitating policy learning. Moreover, we explore deep learning methods for tactile perception and multimodal sensor fusion, which leads us to discuss how tactile feedback is used in robot control for manipulation. Applications in manufacturing and healthcare will be highlighted with examples from industry and research. This half-day multi-disciplinary event brings together diverse robotics and AI communities, offering interactive Keynote Presentations, an Industry Session, a Panel Discussion, Lightning Talks, and a Poster Session.</p>
+        <a class="go" href="https://iros-touch2action.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+      </div>
+    </details>
+    <details class="wsd top">
+      <summary>
+        <span><span class="st">Physical World Models for Scaling Embodied AI</span><span class="ttag vla">VLA</span><span class="sm">Afternoon &middot; Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 319 &amp; 320</span></span>
+        <span class="chev" aria-hidden="true">+</span>
+      </summary>
+      <div class="body">
+        <p class="why">World models as scaling infrastructure: turning human and robot experience into simulation, synthetic data and predictive rollouts. The closest Thursday gets to your VLA work.</p>
+        <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 319 &amp; 320</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+        <p class="ab">Embodied AI is entering a scaling moment, but scaling embodied systems requires more than larger policies or more robot demonstrations. It requires diverse, interaction-rich, and physically grounded experience that can be generated, structured, evaluated, and reused across tasks, embodiments, and environments. This workshop explores Physical World Models as a new scaling infrastructure for embodied AI, turning human and robot experience into scalable simulation, synthetic data, predictive rollouts, and action-relevant representations. We organize the workshop around two tightly connected directions. Physical World Models as Data Engines asks how human videos, robot demonstrations, cross-embodiment data, Real2Sim2Real pipelines, 3D/4D world generation, visuo-tactile sensing, and data-quality benchmarks can create reliable experience for robot learning. World Action Models for Embodied Decision-Making asks how video prediction, geometry grounding, latent dynamics, touch, long-horizon reasoning, policy evaluation, and self-improving agents can bridge predicted futures and executable actions in real-world embodied systems.</p>
+        <a class="go" href="https://physical-world-models.github.io/IROS2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+      </div>
+    </details>
+    <details class="wsd top">
+      <summary>
+        <span><span class="st">Contact &amp; Learning: Is the structure of contact still useful for solving manipulation and locomotion challenges?</span><span class="ttag tactile">Tactile</span><span class="sm">Full day &middot; Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 406</span></span>
+        <span class="chev" aria-hidden="true">+</span>
+      </summary>
+      <div class="body">
+        <p class="why">Whether explicit contact structure still earns its place now that sim-to-real RL and teleop imitation largely bypass it. The modelling-versus-learning argument, posed as the title question. Costs you the whole day.</p>
+        <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 406</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+        <p class="ab">Contact interactions provide the fundamental structure of many robotics problems, including locomotion and manipulation. The discontinuous nature of contact means that the difference between a robot touching or not touching an object or the environment has a huge impact on task performance and safety. For decades, roboticists have tried to model contact dynamics and use its underlying structure to build planners and controllers for robots. However, with the recent success of sim-to-real RL in locomotion and imitation learning with tele-operation demonstrations in manipulation, modern learning-based methods largely ignore our understanding and knowledge of contact for controlling robots. In fact, the prevailing philosophy from the learning community is that any structure that we add to the learning system will ultimately limit the capabilities of that system. Thus, the key question is, should we structure our solution to manipulation or locomotion problems around contact? This workshop will provide a forum to discuss if the structure of contact dynamics is still relevant and useful in modern learning-based controllers, and, if so, what are the promising directions for research in this area. Speakers from both sides of this question and from a variety of backgrounds will be included to ensure a lively debate.</p>
+        <a class="go" href="https://sites.google.com/view/contact-and-learning/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+      </div>
+    </details>
+    <div class="runners">
+      <div class="rh">Close, but a step down</div>
+      <ul>
+        <li><span class="s">Afternoon</span><span><a href="https://sites.google.com/view/rgmcw2026/home-page" target="_blank" rel="noopener">Reproducible Benchmarking of Robotic Grasping and Manipulation: From Advanced AI to Generalized Humanoid Intelligence</a> &middot; <span class="s">Rooms 315 &amp; 316</span><br>Cross-lab benchmarking of grasping and in-hand manipulation.</li>
+        <li><span class="s">Full day</span><span><a href="https://geometric-representations-robotics-ws.github.io/" target="_blank" rel="noopener">Geometric-Aware Representations: Structured priors, metrics, constraints, and groundings for Manipulation</a> &middot; <span class="s">Room 305</span><br>Geometric priors and constraints as structure for manipulation learning.</li>
+        <li><span class="s">Afternoon</span><span><a href="https://hyy2566.github.io/iros-workshop-5th-sat-2026/" target="_blank" rel="noopener">5th Sensorimotor-Augmented Interaction: Human-Interaction-Oriented Paradigm and Real-World Concerns</a> &middot; <span class="s">Room 415</span><br>Teleoperation with haptic, tactile and proprioceptive feedback.</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="allhd">Everything else on Thursday</h3>
   <div class="slotgrp">
       <div class="slotbar"><b>Full day</b><span>8:30 AM &ndash; 5:30 PM</span><span>17 workshops</span></div>
       <details class="wsd">
