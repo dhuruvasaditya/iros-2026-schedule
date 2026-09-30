@@ -362,6 +362,52 @@ tbody tr.srow.picked td.name{color:var(--pick)}
 .kchip.forum{color:var(--org); background:var(--org-bg); border:1px solid var(--org-edge)}
 .kchip.award,.kchip.society,.kchip.tour,.kchip.demo{color:var(--muted); background:var(--surface-2); border:1px solid var(--rule)}
 @media (max-width:720px){ .evrow{grid-template-columns:1fr; gap:3px} }
+/* ---- Thursday workshops, lead section ---- */
+.thu{display:flex; flex-direction:column; gap:16px; scroll-margin-top:12px}
+.thu-head{display:flex; flex-direction:column; gap:7px}
+.thu-head .t{font-family:Archivo,sans-serif; font-size:24px; font-weight:700; letter-spacing:-.02em; margin:0; text-wrap:balance}
+.thu-sub{color:var(--ink-2); max-width:66ch; margin:0; font-size:13.5px; line-height:1.55}
+.slotgrp{display:flex; flex-direction:column; gap:0}
+.slotbar{
+  display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--muted); padding:16px 0 8px;
+}
+.slotbar b{font-family:Archivo,sans-serif; font-size:13.5px; font-weight:600; letter-spacing:-.005em;
+  text-transform:none; color:var(--ink)}
+details.wsd{background:var(--surface); border:1px solid var(--rule); border-radius:3px; margin-bottom:7px}
+details.wsd[open]{border-color:var(--accent)}
+details.wsd > summary{
+  list-style:none; cursor:pointer; padding:13px 15px; display:grid;
+  grid-template-columns:1fr 20px; gap:0 12px; align-items:start; min-height:44px;
+}
+details.wsd > summary::-webkit-details-marker{display:none}
+details.wsd > summary:hover{background:var(--surface-2)}
+details.wsd > summary:focus-visible{outline:2px solid var(--accent); outline-offset:-2px; border-radius:3px}
+.wsd .st{font-family:Archivo,sans-serif; font-size:14.5px; font-weight:600; line-height:1.32; color:var(--ink)}
+.wsd[open] .st{color:var(--accent)}
+.wsd .sm{display:block; font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted); margin-top:5px}
+.wsd .chev{
+  font-family:"IBM Plex Mono",monospace; font-size:15px; color:var(--muted); line-height:1.3;
+  justify-self:end; transition:transform .15s ease;
+}
+details.wsd[open] .chev{transform:rotate(45deg); color:var(--accent)}
+.wsd .body{padding:0 15px 15px; display:flex; flex-direction:column; gap:10px; border-top:1px solid var(--rule-soft); margin-top:2px; padding-top:12px}
+.wsd .ab{font-size:13px; color:var(--ink-2); line-height:1.58}
+.wsd .meta2{display:flex; flex-wrap:wrap; gap:6px 16px; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.wsd .meta2 b{color:var(--ink); font-weight:600}
+.wsd .go{
+  align-self:flex-start; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--accent);
+  text-decoration:none; border:1px solid var(--rule); border-radius:3px; padding:7px 12px; min-height:34px;
+  display:inline-flex; align-items:center;
+}
+.wsd .go:hover{border-color:var(--accent); background:var(--surface-2)}
+@media (prefers-reduced-motion:reduce){ .wsd .chev{transition:none} }
+@media (max-width:720px){
+  .thu-head .t{font-size:20px}
+  details.wsd > summary{padding:14px 13px}
+  .wsd .st{font-size:14px}
+}
 a{color:var(--accent)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
 @media (max-width:720px){
@@ -377,8 +423,487 @@ a{color:var(--accent)}
   <div class="eyebrow">IEEE/RSJ IROS 2026 &middot; David L. Lawrence Convention Center, Pittsburgh</div>
   <h1>Every contributed-talk session, Mon 28 &ndash; Wed 30 September</h1>
   <p class="lede">All 348 paper sessions across 23 rooms. Focused sessions run 9-minute talks plus questions; lightning sessions run 3-minute talks. Click any session to see the papers in it. Every paper is also a poster in the main hall the same half-day, and each one shows its pod and face.</p>
-  <p style="margin:2px 0 0"><a class="jump" href="#other">Jump to keynotes &darr;</a> &nbsp; <a class="jump" href="#workshops">Jump to workshops &darr;</a></p>
+  <p style="margin:2px 0 0"><a class="jump" href="#thursday">Thursday workshops &darr;</a> &nbsp; <a class="jump" href="#other">Keynotes &darr;</a> &nbsp; <a class="jump" href="#workshops">Jump to workshops &darr;</a></p>
 </header>
+<section class="thu" id="thursday">
+  <div class="thu-head">
+    <div class="eyebrow">Thursday 1 October &middot; final day</div>
+    <h2 class="t">All 42 Thursday workshops</h2>
+    <p class="thu-sub">The paper program ends Wednesday; Thursday is workshops only. Tap any workshop to read its full abstract and open its site. Within each block they are ordered by how closely they match tactile and VLA work, so the most relevant sit at the top. 17 run all day, 13 in the morning, 12 in the afternoon &mdash; you can attend one full-day workshop, or one morning plus one afternoon.</p>
+  </div>
+  <div class="slotgrp">
+      <div class="slotbar"><b>Full day</b><span>8:30 AM &ndash; 5:30 PM</span><span>17 workshops</span></div>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Contact &amp; Learning: Is the structure of contact still useful for solving manipulation and locomotion challenges?</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 406</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 406</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Contact interactions provide the fundamental structure of many robotics problems, including locomotion and manipulation. The discontinuous nature of contact means that the difference between a robot touching or not touching an object or the environment has a huge impact on task performance and safety. For decades, roboticists have tried to model contact dynamics and use its underlying structure to build planners and controllers for robots. However, with the recent success of sim-to-real RL in locomotion and imitation learning with tele-operation demonstrations in manipulation, modern learning-based methods largely ignore our understanding and knowledge of contact for controlling robots. In fact, the prevailing philosophy from the learning community is that any structure that we add to the learning system will ultimately limit the capabilities of that system. Thus, the key question is, should we structure our solution to manipulation or locomotion problems around contact? This workshop will provide a forum to discuss if the structure of contact dynamics is still relevant and useful in modern learning-based controllers, and, if so, what are the promising directions for research in this area. Speakers from both sides of this question and from a variety of backgrounds will be included to ensure a lively debate.</p>
+          <a class="go" href="https://sites.google.com/view/contact-and-learning/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">AMBRE: Adaptive Manipulation: Bridging Rigid and Soft Robotics in Underwater Environments</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 324</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 324</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">The workshop addresses underwater manipulation as a major bottleneck in ocean robotics. While underwater vehicles and sensing technologies have advanced significantly, tasks such as biological sampling, infrastructure inspection and maintenance, ecological restoration, and interaction with fragile or irregular objects still require robots capable of robust, adaptive, and safe physical interaction in dynamic and poorly observable environments. This remains difficult due to hydrodynamic disturbances, limited visibility, communication constraints, and the complexity of interacting with natural, often delicate targets. Research relevant to underwater manipulation is currently distributed across multiple communities&mdash;marine robotics, robotic manipulation, soft robotics, perception, and control&mdash;that address complementary aspects of the problem but rarely interact in a structured way, and the topic lacks dedicated venues at major robotics conferences. AMBRE aims to address this fragmentation by focusing on adaptive manipulation strategies that combine the strengths of rigid robotic systems (precision, strength, load-bearing capability) with soft robotics (safer interaction, tolerance to uncertainty, adaptability to complex geometries). Workshop discussions are organized into three complementary thematic areas: Design and embodiment &mdash; how application-specific requirements (marine biology sampling, ecological monitoring and restoration, archaeological exploration, industrial inspection/intervention) shape mechanical design and control; how underwater requirements differ fundamentally from terrestrial ones (e.g., delicate or deformable organic samples, small-scale biological targets); and the relative strengths/limitations of rigid, soft, and hybrid manipulators under severe uncertainty (poor visibility, dynamic currents, imprecise localization, fragile targets). Perception, autonomy, and control &mdash; the appropriate balance between autonomy, shared autonomy, and teleoperation given communication latency and bandwidth constraints; and which sensing modalities (vision, tactile sensing, force feedback, proprioception) best support perception and decision-making in degraded conditions. System integration, evaluation, and deployment &mdash; what benchmarks, datasets, or standardized tasks are needed to fairly compare rigid, soft, and hybrid systems; and how field deployment lessons can inform more robust, scalable designs. The workshop combines invited talks, lightning research pitches, a poster/networking session, and a closing expert panel to foster cross-disciplinary exchange, with a planned post-workshop summary potentially developed into a roadmap-style journal article on open challenges in underwater robotic manipulation.</p>
+          <a class="go" href="https://sites.google.com/view/uwambre/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Geometric-Aware Representations: Structured priors, metrics, constraints, and groundings for Manipulation</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 305</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 305</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Geometric methods and representations have long played a foundational role in robotics, supporting robot kinematics, motion description, multi-body dynamics, and the analysis of physical interaction. In modern manipulation, however, their role is expanding well beyond these traditional uses. Geometric priors, task-relevant metrics, explicit constraints, and physically grounded representations increasingly influence what robotic systems can represent, how they learn, what solutions they favor, and how effectively they compose with downstream planners and feedback controllers. In planning and control, these structures further offer principled mechanisms for encoding feasibility, interaction intent, and contact consistency. This workshop focuses on geometry-aware representations and on the broader role of geometric structure across the manipulation pipeline. It is the 2nd edition of our series on geometric-aware representations (the first was held at ICRA 2023, attracting 120+ participants). It shifts the focus toward the role of geometric structure across the full manipulation stack: sensing and state estimation, learning and latent representations, planning and optimization, and control under contact and geometric constraints. Topics covered include: Geometric priors and groundings for sensing &amp; state estimation Structure-preserving learning and manifold-valued representations Geometry-aware planning, optimization, and control Geometric world models, affordances, and generative representations Equivariant models and symmetry-aware perception-to-action mappings Contact-rich manipulation with geometric constraints Tactile sensing and physically grounded perception Geometric mechanics and whole-body manipulation We invite academic and industry participants to join a dynamic program with invited speakers, spotlight talks &amp; poster sessions, awards, and a Geometric Representation Interdisciplinary Discussion Round-Tables with participants and invited speakers.</p>
+          <a class="go" href="https://geometric-representations-robotics-ws.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Mechanically Intelligent Soft Robotics</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 407</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 407</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Traditional rigid robotics is largely built upon a controller-centric architecture, fundamentally separating sensing, computation, and actuation into distinct components. However, soft robots approach unstructured environments differently; they excel at safe, adaptive interactions by embedding intelligence directly into the physical body of the robot itself. By transitioning away from siloed electronic components, these systems simplify the overall system architecture while simultaneously driving improvements in robustness, adaptability, and autonomy. We define Mechanical Intelligence in soft robots as enabling soft robots to sense, adapt, and make decisions by leveraging their inherent physical structure and mechanics. By embedding sensing, regulation, and decision-like behaviors directly into physical interactions, and transforming environmental inputs into coordinated motion and state transitions, mechanical intelligence minimizes reliance on computationally heavy processing and complex feedback loops. This paradigm is rapidly advancing through recent developments in bio-inspired design, fluidic oscillators, mono-/bi-/multi-stability, and mechanical logic gates. This workshop brings together the soft robotics community with experts in mechanics, structures, and design to explore the emerging field of mechanically intelligent soft robotics. We will highlight state-of-the-art advancements, pinpoint grand challenges and evaluation metrics, and forge cross-disciplinary pathways. Ultimately, the workshop seeks to catalyze new interdisciplinary collaborations and advance the development of robotic systems that integrate mechanical intelligence.</p>
+          <a class="go" href="https://sites.google.com/view/misr2026" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Soft Robot Manufacturing and Testing Hackathon</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 333</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 333</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Soft robotics has shown growing use in applications where compliance grants safety, adaptability, and resilience. However, as soft robotics matures, reproducibility has become critical for comparing results, building trust in reporting, and enabling real-world deployment. Achieving reproducibility remains challenging within soft robotics due in no small part to the complexity and uniqueness of manufacturing and test methods. In order to address these growing challenges and support new generations of researchers to build on the results that came before, our community needs creative approaches and diverse voices to build the reporting guidelines to move us forward. This workshop takes the unique design of a soft robotics &ldquo;hackathon&rdquo;, giving participants the opportunity to engage in real soft robotic manufacturing and testing approaches, to reflect on what information constitutes a &ldquo;complete process description&rdquo; in the context of conference and journal publications, and to suggest new guidelines for what ought to be measured, recorded and reported. This workshop will predominantly consist of interactive activities with small teams led by senior researchers and guided by process experts, followed by whole-group discussions. We believe that this format will support mindful consideration of what, exactly, is critical to process, will allow our community to identify guidelines to increase the reproducibility of their work and will also serve as an opportunity for early career researchers to learn about manufacturing and testing methods from experts in the field.</p>
+          <a class="go" href="https://sites.google.com/umass.edu/softroboticsreproducibility/iros-2026" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">The Evolving Landscape of Surgical Robotics (ELSR): Foundation Models Meet New Robotic Embodiments</span><span class="ttag vla">VLA</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 410</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 410</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Robotic surgery is entering an exciting new era where robots are no longer simply mechanical tools under the direct control of a surgeon, but rather fully-fledged cyber-physical systems capable of collaborating with doctors to carry out complex procedures. Within this evolving landscape, advances in AI technologies, together with the emergence of new robotic embodiments and platforms, are transforming the field while raising many open research questions. This workshop aims to bring together researchers from academia, industry, and the clinical community to discuss the opportunities and challenges introduced by these developments. The workshop will focus on how two emerging themes are jointly shaping the future of surgical robotics: (1) the integration of advanced AI technologies, such as vision-language models (VLMs) and vision-language-action (VLA) models, to enhance perception, reasoning, and decision-making in robotic surgery; and (2) the emergence of new robotic embodiments and platforms, including humanoid and other unconventional robotic systems, which offer new forms of dexterity and interaction. Together, these developments raise new opportunities and questions about how intelligent robotic systems should be designed, embodied, and deployed. The workshop will feature invited talks, panel discussions, a rising star session, and poster sessions. Key insights and discussions from the workshop will be summarized in a white pape, which will be released on arXiv and submitted to a reputable journal for publication.</p>
+          <a class="go" href="https://sites.google.com/view/iros-elsr-2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">From Innovation to Adoption: Hardware, AI, Policy, and Funding Challenges in Agricultural Robotics</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 326</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 326</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Agriculture is undergoing rapid technological transformation, driven by advances in robotics, AI, sensing, and automation. Yet despite a decade of research progress, large-scale deployment of robotic systems in real-world farming remains limited. The gap is rarely just algorithmic: robots must operate reliably in unstructured outdoor environments, agricultural data remains scarce, economic constraints shape what growers can adopt, regulatory frameworks are still evolving, and funding priorities are shifting amid the broader AI investment surge. This full-day workshop, From Innovation to Adoption: Hardware, AI, Policy, and Funding Challenges in Agricultural Robotics, takes place October 1, 2026 in Pittsburgh and examines that gap directly. The program spans four pillars: hardware and field deployment, AI and data challenges, AgTech innovation through startups and entrepreneurship, and emerging interdisciplinary science in AgTech. Two panels address policy design and technology adoption in the era of AI-driven agriculture, and funding landscapes for academic robotics research during the current AI investment surge. Keynotes come from Robert Shepherd (Cornell), on soft robotics for subsoil and canopy health monitoring, and Chris Padwick (Blue River Technology), on how robotics is transforming agriculture. Invited talks span soft grippers and monolithic sensing (Lucia Beccai, IIT), physical AI and digital twins (Lirong Xiang, Cornell), GNSS-free navigation (Riccardo Polvara, Lincoln), field microscopy (Shreyas Kousik, Georgia Tech), field-deployed AI lessons (Abhisesh Silwal, CMU), modular soft manipulators (Dong Chen, Mississippi ation (Kiju Lee, Texas A&amp;M), funding trends (Steve Thomson, USDA/NIFA), and closed-loop disease monitoring (Yu Jiang, Cornell), alongside lightning talks and a poster session. The workshop aims to identify strategies that accelerate responsible, scalable deployment of robotics and AI in agriculture, fostering new collaborations.</p>
+          <a class="go" href="https://sites.google.com/view/iros2026-agrobotics/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Insect-scale Autonomy</span><span class="ttag tactile">Tactile</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 334</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 334</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Advances in robotics have made it possible to build increasingly small and agile systems, but true autonomy at insect scale remains fundamentally constrained by sensing, computation, power, actuation, and packaging. Insects and small animals provide concrete examples of autonomous behavior&mdash;stabilization, navigation, exploration, and rapid recovery&mdash;in cluttered, uncertain, contact-rich environments. This workshop focuses on a single question: What principles, algorithms, and system designs enable reliable autonomy when resources are tightly constrained? We will bring together researchers in autonomy, perception, control, learning, miniature robot design, morphological intelligence, and bio-inspired robotics to identify the technical bottlenecks that currently limit insect-scale autonomy. We invite submissions spanning perception and state estimation, control and planning under constraints, minimal and efficient AI, embodied intelligence and co-design, across a range of robot platforms and scales. The workshop will engage the community through invited keynote presentations, contributed talks, student posters and demos, and an interactive panel discussion focused on evaluation practices, benchmarks, and autonomy targets for insect-scale systems. We aim to define how sensing, computation, mechanics, and control jointly determine autonomy under tight resource limits, and to identify shared challenges and opportunities that can guide future work on minimal, frugal, and insect-scale autonomy.</p>
+          <a class="go" href="https://insect-autonomy.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">1st Workshop on Neuromuscular Robotics</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 335</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 335</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">This workshop explores the frontier between human neuro-mechanics and robotic embodiment, bringing together neuroscience, biomechanics, robotics, and bioengineering. Its focus is on understanding how the recent advances in modelling the human neuromuscular system (NMS) to understand movement can help inspire robots that move with similar adaptability and intelligence. The scope is twofold: advancing models of neuromuscular control to deepen our understanding of human movement, and translating these insights into muscle-driven and biohybrid robotic systems. To reflect this, the workshop is organized into two complementary tracks: human neuromuscular understanding and interfaces, and neuro-muscular robotics platforms. By bridging neural decoding, musculoskeletal modeling, reinforcement learning, and biohybrid actuation, the program highlights how progress in one field can accelerate innovation in the other. A diverse group of speakers, from pioneers in bionic reconstruction to leaders in biohybrid engineering, will share their perspectives across these tracks. Alongside invited talks, the workshop features live demonstrations of software and hardware, posters, and a roundtable to stimulate cross-fertilization. The aim is to chart new directions for human-machine interfaces and digital-biological integration, fostering collaborations that move beyond disciplinary boundaries.</p>
+          <a class="go" href="https://sites.google.com/view/neuro-muscular-robotics/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">A Body-Language Tutorial: Notating and Recognizing Posture and Gesture in the Environment for Social Robotics with Shared Infrastructure</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 402</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 402</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">How do we build a machine that is fluent in body-language? That is, how do we develop models about how internal state, e.g., goals, attitude, or even emotion, relates to changes in postural and gestural movement profiles? And how does context, or the environment, modulate this interaction? This tutorial will pose a possible direction toward such ends that leverages movement notation as a source for clearly defining abstract concepts of similarity and symbolic representation of the parts and patterns of movement. First, we will move together. This will activate an innate ability to imitate each other and, in doing so, illuminate the principal components of Laban/Bartenieff Movement Studies and the Body, Effort, Shape, Space, and Time (BESST) System of movement analysis. Next, we will try to write down what we&#x27;re doing. A set of symbols for describing elements of the BESST System, which seem to be particularly perceptually meaningful to human observers, will be presented so that movement ideas can be notated and, thus, translated between bodies. Finally, we will explore the role of context and the environment -- and how it can upend this process. An invited speaker will help frame the material of the tutorial: by grappling with notating interaction both with objects (and others) in and with the environment. The organizers will also introduce a shared infrastructure and dataset for computational understanding of human bodily expressions. This infrastructure and tutorial is supported by NSF award #2234196.</p>
+          <a class="go" href="https://events.the-rad-lab.org/workshops/iros26/index.html" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">AQ&sup2;UASIM -V2: Advancing Quantitative and QUAlitative SIMulators for marine applications</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 325</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 325</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">AQ&sup2;UASIM-v2, Advancing Quantitative and Qualitative Simulators for Marine Applications, is an endorsed UN Ocean Decade Activity taking place at IROS 2026 in Pittsburgh, USA. The workshop brings together researchers, engineers, and practitioners working on marine robotics, simulation, AI, and autonomy to advance both quantitative benchmarking and qualitative realism in underwater and maritime simulators. By strengthening the link between realistic simulation, ocean technologies, and operational marine applications, AQ&sup2;UASIM-v2 aims to support trustworthy robotic systems for ocean science, monitoring, and sustainable exploration.</p>
+          <a class="go" href="https://sites.google.com/view/aquasim-v2/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Miniature Multiterrain and Multimodal Locomotion: from Biology to Robotics</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 336</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 336</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Miniature organisms spanning millimeter-to-centimeter scales thrive across water, land, and air. Despite their small sizes, they achieve extraordinary multiterrain and multimodal locomotion, along with robust sensing and task execution in complex, cluttered environments. In contrast, today&rsquo;s miniature robots still exhibit limited mobility, adaptability, and endurance, leaving a substantial gap between their promise and real-world performance in hard-to-reach and confined spaces. This workshop will bring together researchers in biology, physics, robotics, and biomedical engineering to identify the key challenges and opportunities for building novel miniature robots with capabilities approaching those of small animals. Invited speakers will highlight recent advances in (i) biological studies on miniature animals that reveal scalable principles of locomotion and control, (ii) miniaturized actuation, power, and fabrication, (iii) onboard and distributed sensing, perception, and autonomy, and (iv) representative applications in biomedical, environmental, and industrial settings. A central theme of the workshop is to rigorously quantify the performance gap between biological systems and miniature robots using metrics such as speed, efficiency, stability, terrain/medium transitions, maneuverability, payload-to-weight ratio, robustness, and controllability, and to translate these comparisons into actionable design targets. Through talks, panel discussions, and interactive breakout sessions, participants will discuss emerging design principles, define shared benchmarks and evaluation protocols, and outline high-impact research directions and application pathways for miniature robots operating in environments where conventional large-scale robotic systems struggle.</p>
+          <a class="go" href="https://sites.google.com/hawaii.edu/iros2026workshop/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">ROSE: Robotic One-Shot Exploration from Deep Ocean to Deep Space</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 329</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 329</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Many of the most compelling environments for scientific discovery are also among the least accessible, from the deep ocean to the outer solar system and many locations in-between. Robotic exploration of these environments has traditionally progressed through a sequence of missions that incrementally refine system design and operational strategies, with humans closely involved in both planning and real-time decision-making. This paradigm becomes infeasible when missions are extremely costly, communication is limited, and mission timelines prohibit rapid iteration. In deep ocean environments, research vessel availability affects development and deployment, and electromagnetic attenuation limits communication bandwidth. In deep space, launch windows and travel times constrain mission development, and communication delays arise from the vast distances involved. In such settings, robotic systems should succeed in a single deployment, adapting to unforeseen challenges and opportunities as they are encountered. This workshop will explore two key questions: (1) How can robotic systems be made more adaptable at a system level through both hardware- and software-defined capabilities? (2) How can robotic systems be made to recognize and exploit unexpected opportunities in unknown environments? Topics will cover a broad range of robotics technologies, including multi-modal locomotion, embodied and morphological adaptation, multi-robot and distributed exploration, uncertainty-aware adaptive sensing and perception, human-robot interaction, and autonomous science. By fostering dialogue across ocean and space exploration communities, the workshop aims to identify common challenges, highlight emerging solutions, and build a research agenda for robotic systems capable of conducting meaningful scientific exploration in environments where there may be only one chance to get it right.</p>
+          <a class="go" href="https://sites.google.com/view/iros-2026-rose-workshop" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Robotics and Autonomous Systems in Humanitarian Assistance and Disaster Relief (HADR)</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 327</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 327</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">This workshop focuses on robotics and autonomous systems for Humanitarian Assistance and Disaster Relief (HADR), bringing interdisciplinary technologies to address complex emergency response challenges. It will convene researchers and practitioners from robotics, disaster science, emergency and field medicine, and systems engineering to explore problems spanning small-scale incidents to large-scale catastrophes while identifying common underlying challenges. Topics include field-deployable aerial and ground platforms, resilient perception and mapping in degraded environments, human&ndash;robot teaming, and decision support under uncertainty, alongside theoretical perspectives that frame HADR as a coherent scientific problem space. The workshop will also emphasize retrospective analyses of past deployments, strategies for collecting and sharing operationally relevant datasets, and the development of meaningful benchmarking methodologies that reflect the constraints of real disaster environments.</p>
+          <a class="go" href="https://hadr-robotics.github.io/iros2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Sim2Real and Classical Control: From Rigorous Theory to Data-Driven Robotics</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Rooms 303 &amp; 304</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 303 &amp; 304</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Simulation has long been a valuable tool for robotics, but its role is fundamentally shifting. Simulators are now integrated components of deployment pipelines, not merely prototyping aids. This shift, embodied in sim-to-real transfer, is rapidly redefining how robots are designed and validated at scale. Yet the simulation-reality gap remains one of the most unsolved problems in modern robotics. The community is responding by exploiting real-world data to refine simulators through real-to- sim techniques. Together, sim-to-real and real-to-sim form a closed-loop framework that extends the classical foundations of system identification and adaptive control, fields with decades of rigorous theory that both communities have every reason to build upon. Two forms of fragmentation currently limit collective progress. First, model-driven and data- driven researchers often work in isolation. Second, system identification, adaptive control, and sim-to-real are treated as competing paradigms rather than complementary instruments facing the same problem. In this context, this full-day workshop makes a targeted intervention across IROS&rsquo;s core tracks, namely control, learning, and perception, with four concrete objectives: first, consolidate fragmented knowledge across communities; second, align research directions between control and learning communities; third, facilitate translation of academic advances into real-world deployment, and fourth, promoting intergenerational exchange between speakers from academia and industry, students, early-career researchers, and engineers. Unlike prior events that have addressed sim-to-real at the application layer, this workshop treats it as a foundational methodological problem approached through the lens of control theory, a framing that so far has remained absent from the conference landscape.</p>
+          <a class="go" href="https://sim2realgap.github.io/sim2real-and-control-workshop-iros2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">State of the Art in Robotic Leg Prostheses: Where We Are and Where We Want to Be (3rd Edition)</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 328</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 328</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Ambulation with conventional prostheses is slower, less stable, and less efficient than ambulation in able-bodied individuals. Robotic leg prostheses have the potential to close this gap by providing biomechanically accurate kinetics and kinematics. Although these devices have advanced considerably, design challenges persist in making them lighter, more powerful, and more durable, while open issues in control include adaptability to unstructured real-world environments, integration of the user&rsquo;s volition, and personalization based on the patient&rsquo;s preference. This 3rd edition of the workshop builds on the highly successful IROS 2020 and 2023 events, focusing on the latest breakthroughs and open challenges in powered prosthetics. To highlight new concepts, we will showcase emerging applications, including the development of bionic legs for highly dynamic activities, agile maneuvers, and navigating complex, unstructured environments, as well as the integration of neural interfaces into the prosthesis control loop. Top researchers will present their current approaches, while interactive panel discussions will dissect ongoing challenges. Attendees will also experience live demonstrations of state-of-the-art powered prostheses and get hands-on experience with leading technologies. A dedicated poster session will highlight emerging researchers and provide them with early feedback on their work.</p>
+          <a class="go" href="https://hgnlab.mech.utah.edu/iros2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Training the Future Medical Roboticist</span><span class="sm">Full Day &middot; 8:30 AM&ndash;5:30 PM &middot; Room 405</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 405</b></span><span><b>Full Day &middot; 8:30 AM&ndash;5:30 PM</b></span></div>
+          <p class="ab">When developing collaborative projects in medical robotics, there is a need for interdisciplinary understanding and practice for clinical interactions and effective problem selection. This workshop will discuss developing effective clinical collaborations in robotics research and designing medical robotics education to future medical roboticists.</p>
+          <a class="go" href="https://future-med-roboticist.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+    </div>
+  <div class="slotgrp">
+      <div class="slotbar"><b>Morning</b><span>8:30 AM &ndash; 12:30 PM</span><span>13 workshops</span></div>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Enhancing Dexterous Manipulation Through Haptic Feedback</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 403 &amp; 404</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 403 &amp; 404</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Enhancing Dexterous Manipulation Through Haptic Feedback is a half-day workshop dedicated to exploring the growing role of haptics in enabling dexterous robotic manipulation. As robots are deployed in increasingly complex and unstructured environments, the ability to perceive and respond to physical interaction is becoming fundamental for robust, adaptive, and dexterous manipulation. From tactile sensing and haptic feedback to contact modeling and interface design, haptic technologies are enabling robots to manipulate objects with greater dexterity, adapt to uncertain interactions, and perform increasingly complex manipulation tasks. This workshop will bring together researchers across robotics, haptics, tactile sensing, and human perception to discuss recent advances, identify critical research challenges, and explore emerging applications of haptic-enabled manipulation. The program will feature invited talks from leading experts, an interactive panel discussion on future directions for the field, and technical discussions designed to foster collaboration across disciplines. In addition, the workshop will include a poster session open to researchers at all career stages, providing an opportunity to present ongoing work, exchange ideas, and network with the community. A Best Poster Award will recognize an outstanding contribution presented during the workshop. We welcome participation from researchers working in robotic manipulation, haptic feedback, tactile sensing, teleoperation, human&ndash;robot interaction, soft robotics, and related fields. The workshop aims to strengthen collaboration across these communities and help shape the future of haptics as a key enabling technology for dexterous robotic manipulation.</p>
+          <a class="go" href="https://hapticsworkshop.github.io/IROSHapticsWorkshop/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Building Scalable Infrastructure for Robot Learning: From Data Scaling to Real-World Deployment</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 317 &amp; 318</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 317 &amp; 318</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Recent advances in robot learning, including Vision-Language-Action models and embodied foundation models, have shown promising progress toward general-purpose robots. However, scaling robot learning beyond laboratory demonstrations is increasingly constrained by system-level challenges rather than model architectures alone. Large-scale data acquisition, scalable post-training, reliable evaluation, and real-world deployment infrastructure remain fragmented across different research efforts. This workshop focuses on the end-to-end infrastructure needed for scalable robot learning, covering the full lifecycle from data scaling to real-world deployment. The program will bring together researchers and practitioners from robotics, embodied AI, machine learning systems, computer vision, reinforcement learning, and industry to discuss four interconnected topics, i.e., data scaling, training and post-training, evaluation, and deployment infrastructure. The workshop welcomes research papers, system and infrastructure reports, benchmarks, work in progress, and negative or failure-case studies that provide practical insights for the community. The workshop will feature invited talks, selected paper presentations, and interactive posters. It aims to connect algorithmic innovation with engineering practice. We are also pleased to host the ATEC 2026 Pittsburgh Real-World Preliminary Challenge as a competition track, providing teams with an opportunity to evaluate embodied AI systems on physical robotic platforms under realistic conditions. Through this workshop, we aim to clarify shared infrastructure challenges, promote reproducible evaluation and deployment practices, and catalyze reusable system design principles for scaling robot learning in real-world environments.</p>
+          <a class="go" href="https://scale-infra.github.io/iros2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Leveraging Human-Robot Dialogue to Improve Robot Learning and Human-Robot Interaction</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 412</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 412</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Recent advances in robot learning, large language models, and vision-language models have made robots increasingly capable of understanding complex tasks specified in natural language. However, most robot-learning systems still treat communication as unidirectional: humans speak, and robots listen and act. A robot that cannot respond may struggle with ambiguous instructions, leading to inefficient learning, uninterpretable behavior, and failures that confuse or endanger users. Dialogue enables robots to ask clarification questions, communicate uncertainty, explain their actions, provide status updates, request assistance, and answer questions. These capabilities can help robots learn and generalize more effectively while making their behavior safer, more transparent, and better aligned with human intentions and preferences. The workshop will bring together researchers from robot learning, human&ndash;robot interaction, natural language processing, computer vision, foundation models, dialogue systems, and cognitive science. Our goal is to share recent advances, identify key open problems, and develop a community-wide research agenda for dialogue-enabled robots.</p>
+          <a class="go" href="https://human-robot-dialogue.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">4th Workshop on Nonverbal Cues for Human-Robot Cooperative Intelligence</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 414</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 414</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">This workshop explores next-generation Physical AI that can perceive, reason about, and collaborate with humans in real-world environments. As robots and intelligent agents become increasingly integrated into workplaces, public spaces, and daily life, they must understand not only tasks and environments but also the people around them. Achieving this vision requires advances in multimodal perception, human state inference, and socially aware interaction. The workshop brings together researchers from robotics, artificial intelligence, human-robot interaction, affective computing, computer vision, cognitive science, and multimodal sensing to develop systems that can interpret nonverbal cues and respond appropriately in complex social settings. Particular emphasis is placed on understanding intentions, emotions, attention, engagement, cognitive load, and group dynamics through signals such as gaze, facial expressions, body movements, speech characteristics, and physiological cues. Recent advances in foundation models, Large Language Models (LLMs), Vision-Language Models (VLMs), and generative AI have created new opportunities for embodied intelligence. However, extending these capabilities to naturalistic and multiparty interactions remains a significant challenge. This workshop explores how multimodal behavior understanding can complement foundation models to enable more adaptive, trustworthy, and collaborative Physical AI. This iteration particularly focuses on novel datasets and the release of a new dataset. The lack of large-scale, richly annotated multimodal datasets continues to limit progress, especially for real-world social interactions involving multiple participants. The workshop will highlight emerging datasets, benchmarking methodologies, annotation frameworks, and evaluation protocols, while introducing a new multimodal dataset of naturalistic social interactions. By supporting reproducible research and community-wide benchmarking, the dataset release aims to accelerate advances in embodied and socially intelligent systems. Through invited talks, paper presentations, interactive discussions, and dataset-centered activities, the workshop will foster collaboration between academia and industry while advancing the foundations of Physical AI. We invite papers on embodied AI, human-robot collaboration, and multimodal behavior understanding for real-world applications.</p>
+          <a class="go" href="https://nocworkshop.github.io/2026-IROS/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">3rd Workshop on AI Meets Autonomy: Vision, Language, and Autonomous Systems</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 319 &amp; 320</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 319 &amp; 320</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Recent advances in Large Language Models (LLMs), Visual Language Models (VLMs), and other foundation models present new opportunities for robotics. The 3rd iteration of this workshop focuses on exploring the intersection of these models and robotic systems, highlighting how progress in the AI and computer vision communities can inform and accelerate robotics research. Integrating LLMs and VLMs into robotic pipelines could enable systems that are more explainable, instructable, and capable of generalizing across tasks. However, achieving seamless integration remains a significant challenge, as existing models often lack the grounded understanding required for real-world robotic applications, including knowledge of physical properties, spatial relationships, and temporal dynamics. Closer integration with robotic platforms may help address these limitations, as real-world interaction provides rich sensory observations and physical feedback that can support the development of more robust and physically grounded intelligent systems. This workshop seeks to establish an inclusive and collaborative forum for professionals, researchers, and enthusiasts to exchange ideas, share experiences, and build connections within the AI and robotics community, with particular emphasis on supporting and connecting early-career researchers. The program will include invited talks, paper presentations, open panel discussions, networking opportunities, and presentations of exclusive results and demonstrations from the CMU Vision-Language-Autonomy Challenge. Five invited speakers will present their research, perspectives, and future directions on topics at the intersection of AI and autonomous systems, spanning areas such as datasets and benchmarks, software infrastructures, visual-language navigation, situated reasoning, robotics foundation models, and related themes.</p>
+          <a class="go" href="https://www.ai-meets-autonomy.com" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">A tutorial on Scalable Multi-Robot Planning: From Multi-Agent Path Finding Algorithms to Real Robotic Systems</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 321</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 321</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Coordinating large teams of robots is a fundamental challenge in modern robotics, with applications ranging from warehouse automation to robotic assembly. Multi-Agent Path Finding (MAPF) has emerged as a promising algorithmic framework for addressing this challenge and has been extensively studied over the past decade, with scalable algorithms capable of coordinating thousands of robots. However, most MAPF research has historically focused on grid-based environments with simplified robot models in simulation, leaving a gap between algorithmic advances and robotic deployment. This tutorial aims to help bridge this gap by presenting recent advances that extend MAPF from simulated discrete-time grid worlds to real robotic systems in both research labs and industry. We will highlight three representative applications: automated warehouses, multi-drone coordination, and multi-arm manipulation. In particular, speakers from robotics companies will present how MAPF-based coordination is deployed in today&rsquo;s warehouses with hundreds of robots and discuss practical challenges in transitioning MAPF algorithms from research prototypes to production environments. The tutorial will also include a hands-on session on LSMART, an open-source platform for benchmarking and executing MAPF plans on large fleets of automated guided vehicles, providing participants with practical experience in building MAPF-based coordination pipelines. Although MAPF has become a highly active research area with numerous workshops, tutorials, and competitions at major robotics and AI conferences, most prior events have focused on algorithmic advances in simplified planning settings. To the best of our knowledge, this will be the first tutorial dedicated to advancing MAPF algorithms for real-world robotic applications, covering both research prototypes and large-scale industrial deployments.</p>
+          <a class="go" href="https://sites.google.com/view/iros-26-mapf-tutorial/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Creativity in Assembly</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 413</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 413</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Robotic assembly has traditionally focused on well-specified industrial settings with fixed parts, structured environment and predefined goals. However, emerging applications in creative designs, household robotics, and human-robot collaboration highlight the need and interest in customized solutions for assembly tasks. In these scenarios, the problem is often underspecified or ambiguous: the target assembly may be provided only as a 2D sketch, silhouettes, semantic descriptions or high-level concepts. Additionally, the available components may consist of generic primitive shapes or irregular non-exact corresponding parts. Solving such problems requires reasoning beyond classical task planning: the system must be able to abstract solutions, by inferring missing constraints, consistent geometry and physically stable assemblies under uncertainty. Furthermore, in assembly, the contact-rich nature of the task poses yet another challenge in motion planning and execution. This workshop aims to address those challenges, by bringing together researchers working on assembly under uncertainty, with a focus on: Assembly design in under specified targets; Geometric and physical reasoning from incomplete information; Integration of Large Language Models (LLMs) as general reasoning agents for assembly planning under uncertainty; Addressing these challenges could unlock new strategies that extend robotic assembly beyond well-defined manufacturing domains, enabling robots to reason about and perform open-ended assembly tasks in uncertain and creative settings.</p>
+          <a class="go" href="https://sites.google.com/view/creative-assembly-workshop" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Learning-based Robot Co-design: Generative and Iterative Approaches</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 411</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 411</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Recent advances in foundation models, large language models, and generative models are beginning to reshape how researchers approach robot co-design. At the same time, robot co-design has long relied on iterative paradigms such as reinforcement learning, optimization, and evolutionary search. While both directions have shown promise, their relative strengths, limitations, and opportunities for integration remain unclear. This workshop focuses on learning-based robot co-design, with particular emphasis on two complementary paradigms: generative approaches that propose novel robot embodiments and morphologies, and iterative approaches that improve designs through reinforcement learning, optimization, or evolutionary search. By bringing these perspectives together, the workshop aims to foster discussion on how recent advances in generative AI are changing the co-design landscape, when different paradigms are most effective, and whether hybrid approaches can unlock new capabilities. The workshop will bring together researchers working on robot co-design, generative design, reinforcement learning, and optimization-based design, providing a platform to present recent advances and discuss future directions for learning-based robot co-design.</p>
+          <a class="go" href="https://sites.google.com/view/robot-codesign-iros" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">AI Meets Control for Resilient and Reliable Robot Planning (AIM-Ctrl)</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 408 &amp; 409</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 408 &amp; 409</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Planning is fundamental to autonomous robots, enabling purposeful decision-making, adaptation to change, and sustained, reliable operation over long time horizons. Yet planning remains fragmented across the AI and control communities, which often pursue parallel solutions with limited interaction. AI-driven planning (e.g., RL) offers adaptability and reasoning over complex information but struggles to guarantee resilient and reliable long-term behavior, where performance must be maintained under disturbances and remain predictable across extended deployments. Control-driven planning (e.g., MPC) provides structure, predictability, and robustness, but is limited in flexibility, scalability, and its ability to integrate heterogeneous knowledge. Neither approach alone fully supports autonomy that must persist, evolve, and remain trustworthy over extended deployments. This workshop aims to bridge these perspectives by promoting a shared view of planning for long-term robot autonomy. Unlike workshops focused on specific domains or isolated aspects such as perception or safety, this event treats planning as a foundational, cross-cutting problem. Its emphasis is on integrating AI-driven reasoning with control-driven structure to achieve resilient and reliable long-horizon behavior. Key research questions include: what are the benefits and limitations of integrating control and AI for robotic planning? Can we provide shared representations for goal, constraints and uncertainty to bridge the gap between AI and control? Which approaches can capture long-horizon robustness under distribution shift, rare events, and cumulative degradation? Through invited talks, contributed presentations, and an interactive panel, the workshop seeks to define a common research agenda and foster collaboration toward autonomous systems that plan intelligently, reliably, and with sustained resiliency.</p>
+          <a class="go" href="https://sites.google.com/view/aim-ctrl/home-page" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Bridging Learning and Physics for Robust Whole-Body Robot Control</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Rooms 315 &amp; 316</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 315 &amp; 316</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">The workshop focuses on advancing whole-body control methods that are robust and ready for real-world robotic deployment. While recent learning-based techniques have shown impressive progress, they often struggle with reliability, safety guarantees, and generalization in unconstrained environments. Conversely, purely model-based methods can be difficult to scale and struggle with real-world uncertainty. To address these limitations, the workshop will emphasize hybrid approaches that integrate data-driven learning with physics-grounded models to improve reliability, interpretability, and performance. A key goal is to bridge these paradigms, leveraging the adaptability of learning-based methods while retaining the structure, stability, and safety guarantees of model-based control, while discussing open challenges and outlining future directions for the field.</p>
+          <a class="go" href="https://sites.google.com/view/iros2026ws-wbc/home" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Perception and Navigation for Marine Robotics</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 325</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 325</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Marine robotics operates in environments that routinely break the assumptions behind many perception and navigation pipelines. Visibility can degrade abruptly due to turbidity, sonar returns are highly viewpoint-dependent, GPS is unavailable underwater, and vehicle motion is continuously perturbed by currents. Furthermore, intermittent communication limits remote supervision, and obtaining ground truth is costly or infeasible. Consequently, robust autonomy in the ocean hinges on resilient multimodal sensing, state estimation, and mapping methods that remain stable under uncertainty and long-duration drift. This workshop brings together researchers to discuss emerging solutions and open challenges spanning sensor fusion, SLAM in low-visibility scenes, and localization in GPS-denied settings. A unique aspect of this workshop compared to past events is its grounding in a concrete, real-world challenge. The program features an invited talk from a marine biologist to share the on-the-ground challenges of coral reef conservation, highlighting exactly where marine robotics can make the biggest societal difference.</p>
+          <a class="go" href="https://edwinmeriaux.github.io/marinerobotics_iros2026" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Toward Human-Level Robotic Teammates</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 415</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 415</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">The emergence of agentic AI and the growing influence of neurosymbolic AI make it incumbent on the robotics community to assess their impact on integrating intentionality and reasoning with embodiment and perception. While advances in machine learning-based, data-driven approaches have expanded robot capabilities in perception and control, cognitive modeling relying on symbolic knowledge, commonsense reasoning, and ontologically-grounded perception interpretation is widely considered the necessary complement for developing robust, intentional, reflective, trustworthy, explainable, and socially aware robots with whom human teammates can interact naturally. A core R&amp;D question is how best to scale up from task-specific skills to integrated cognitive-robotic agency. This workshop takes a comprehensive systems view: how do perception, reasoning, learning, planning, execution, and human-robot interaction combine into unified cognitive architectures capable of human-level performance as teammates? The workshop will address neurosymbolic integration; long-horizon and hierarchical planning; human-robotic teaming and theory of mind; perception and action grounding; knowledge representation; varieties of learning; trust, explainability, and ethics; and resource sharing. Its defining feature is a dual-panel structure: Panel A will critically assess the strengths and weaknesses of current approaches to cognitive robotics; Panel B will function as a structured community-building exercise, collectively sketching a roadmap for future R&amp;D. Together, the panels will generate the kind of frank, synoptic, cross-cutting discussion that individual talks cannot produce.</p>
+          <a class="go" href="https://www.ontoagenticai26.info" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Workshop on Open Robotics Software</span><span class="sm">Half Day &middot; 8:30 AM&ndash;12:30 PM &middot; Room 302</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 302</b></span><span><b>Half Day &middot; 8:30 AM&ndash;12:30 PM</b></span></div>
+          <p class="ab">Robotics research increasingly relies on complex software systems. The sustainability and reproducibility of robotics software are critical not only for understanding the comparative advantages of existing methods but also lowering the barrier to entry for new researchers and developers and for accelerating the development of next-generation robotic systems. This workshop will discuss the long-term challenges of maintaining widely used robotics libraries across simulation, planning and control, perception, and infrastructure. These tools are essential to research, but keeping them current and reliable requires steady support from academia, industry, and the open-source community. The workshop will bring together developers or maintainers of major robotics frameworks to share best practices on creating, growing, and sustaining contributor communities, securing funding, and adopting governance models that balance research innovation with software stability. We will also consider how newer, mainly learning-oriented, tools and frameworks co-exist with more traditional robot software libraries. The workshop will address challenges of adoption and long-term sustainability. The goal of this workshop is to strengthen the robotics community by promoting sustainable software practices that support reproducible research, accelerate innovation, and enable broader participation in developing the next generation of robotic systems.</p>
+          <a class="go" href="https://sites.google.com/rice.edu/iros26-robotics-software/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+    </div>
+  <div class="slotgrp">
+      <div class="slotbar"><b>Afternoon</b><span>1:30 PM &ndash; 5:30 PM</span><span>12 workshops</span></div>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Touch-to-Action: Enhancing Robot Manipulation through Tactile Perception</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 403 &amp; 404</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 403 &amp; 404</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Tactile sensing is fundamental for humans to perceive the world and manipulate objects. In robotics, Artificial Intelligence (AI) is transforming manipulation by leveraging proprioception, vision, and language. However, touch in manipulation remains underexplored, with research still fragmented compared to other sensing modalities (e.g., vision), which benefit from standardized technologies. The Touch-to-Action workshop provides a roadmap to tactile sensing and manipulation with a vertical approach, bridging bioinspiration, sensor design and fabrication, simulation, perception, and control. First, we review the biological sense of touch and how it guides the development of robotic tactile sensors, setting the fundamentals for subsequent technical sessions. Then, we cover tactile sensor technologies, including transduction principles, design and fabrication methods, and integration strategies. We also address the promising role of simulation, from supporting optimal sensor design to facilitating policy learning. Moreover, we explore deep learning methods for tactile perception and multimodal sensor fusion, which leads us to discuss how tactile feedback is used in robot control for manipulation. Applications in manufacturing and healthcare will be highlighted with examples from industry and research. This half-day multi-disciplinary event brings together diverse robotics and AI communities, offering interactive Keynote Presentations, an Industry Session, a Panel Discussion, Lightning Talks, and a Poster Session.</p>
+          <a class="go" href="https://iros-touch2action.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Physical World Models for Scaling Embodied AI</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 319 &amp; 320</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 319 &amp; 320</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Embodied AI is entering a scaling moment, but scaling embodied systems requires more than larger policies or more robot demonstrations. It requires diverse, interaction-rich, and physically grounded experience that can be generated, structured, evaluated, and reused across tasks, embodiments, and environments. This workshop explores Physical World Models as a new scaling infrastructure for embodied AI, turning human and robot experience into scalable simulation, synthetic data, predictive rollouts, and action-relevant representations. We organize the workshop around two tightly connected directions. Physical World Models as Data Engines asks how human videos, robot demonstrations, cross-embodiment data, Real2Sim2Real pipelines, 3D/4D world generation, visuo-tactile sensing, and data-quality benchmarks can create reliable experience for robot learning. World Action Models for Embodied Decision-Making asks how video prediction, geometry grounding, latent dynamics, touch, long-horizon reasoning, policy evaluation, and self-improving agents can bridge predicted futures and executable actions in real-world embodied systems.</p>
+          <a class="go" href="https://physical-world-models.github.io/IROS2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Reproducible Benchmarking of Robotic Grasping and Manipulation: From Advanced AI to Generalized Humanoid Intelligence</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 315 &amp; 316</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 315 &amp; 316</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Advances in robotics, perception, and AI are raising expectations for robots to achieve high-level capabilities that enable them to autonomously, accurately, and robustly perform complex manipulation tasks. These include autonomous assembly and disassembly, in-hand manipulation, heterogeneous object picking in cluttered environments, and human&ndash;robot collaboration. Despite significant research efforts over the past decades, many of these crucial capabilities remain far from solved. Most existing solutions are demonstrated through custom pipelines and validation procedures developed within individual laboratories, often relying on different sensing modalities, workflows, and evaluation criteria. As a result, it is difficult to fairly compare approaches or reproduce results across research groups. Benchmarking, therefore, plays a critical role in enabling reproducibility, transparent evaluation, and meaningful comparison of different methods, ultimately accelerating progress in challenging robotic manipulation problems. This workshop aims to bring together researchers, practitioners, and stakeholders from academia, industry, and standardization organizations to discuss the current status, challenges, and future directions of reproducible benchmarking in autonomous robotic grasping and manipulation. Particular attention will be given to the growing interaction between research innovation and practical engineering solutions needed to develop efficient, robust, and trustworthy robotic systems that operate reliably in real-world environments outside the laboratory. The lessons learned from the workshop will provide insights into the evolution of grasping and manipulation research and will feed the development and deployment of humanoids and advanced artificial intelligence systems.</p>
+          <a class="go" href="https://sites.google.com/view/rgmcw2026/home-page" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">The SOFT Frontier 4: Intelligent Interactions in Soft Robotics</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 321</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 321</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Soft robotics offers distinct advantages in interaction scenarios through inherent compliance. However, realizing truly intelligent interactions demands addressing fundamental challenges: How can soft robots exploit compliance for adaptive navigation through unstructured environments? How can they achieve precise yet gentle manipulation of delicate and unknown objects? How can they collaborate with humans in ways that are safe, intuitive, and responsive? The 4th SOFT Frontier Workshop at IROS 2026 explores &quot;Intelligent Interactions&quot; as the next critical frontier in soft robotics, examining how soft robots can achieve sophisticated interactions across three fundamental domains: environmental navigation, object manipulation, and human collaboration. Participants will examine how interdisciplinary advances &mdash; from bio-inspired morphologies and proprioceptive sensing to distributed actuation and adaptive control &mdash; enable soft robots to perceive their surroundings, plan adaptive behaviors, and act effectively in real-world conditions.</p>
+          <a class="go" href="https://sites.google.com/view/sft-front/iros-2026" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">5th Sensorimotor-Augmented Interaction: Human-Interaction-Oriented Paradigm and Real-World Concerns</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 415</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 415</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Teleoperation is moving beyond conventional input devices and visual/haptic feedback toward sensorimotor augmentation that comprehensively matches human proprioception, perception, and cognitive decision-making. Despite major progress in robotics and AI, persistent limitations remain in reducing operator workload, sustaining situational awareness, and enabling intuitive, safe human-robot teaming under uncertainty. This workshop advances a human-interaction-oriented (HIO) framework that couples multimodal sensory feedback, including haptic, tactile, and proprioceptive cues, with adaptive motor-control augmentation to narrow the gap between human intent, task-level reasoning, and robotic execution. Building on our success in IROS 2025, this 5th workshop foregrounds multimodal teleoperation foundation for task understanding, intent inference, and policy adaptation, alongside mechanisms for reliability and constraint enforcement. It highlights digital-twin-enhanced training and evaluation, combining simulation, sim-to-real calibration, and human-in-the-loop data collection for reproducible benchmarking. It also emphasises adaptive shared autonomy with measurable safeguards, integrating risk-sensitive control, safety filters, and online learning to allocate autonomy based on operator state and task complexity. What makes this workshop distinctive is its end-to-end sensorimotor integration agenda across high-consequence domains such as surgery, marine exploration, and nuclear decommissioning. This workshop features confirmed speakers from academia, industry and end users, an expanded Mentor-Mentee Network, interactive demonstrations of devices such as haptic gloves and vision-based tactile sensors, and a hands-on Teleoperation Challenge Session. By bridging robotics, neuroscience, and human-computer interaction, the workshop aims to reposition teleoperation as a human-centred, sensorimotor-enhanced paradigm that is safer, more interpretable, and more natural to operate.</p>
+          <a class="go" href="https://hyy2566.github.io/iros-workshop-5th-sat-2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Workshop on Neuro-Symbolic AI for Intelligent Robots: Integrating Large Language Models, Knowledge Graphs, and Automated Reasoning</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 302</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 302</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">This workshop continues a series previously organized at IROS 2020, IROS 2022, and ICRA 2023, dedicated to integrating machine learning and automated reasoning for intelligent robotic systems. This new edition focuses on recent advances in Neuro-Symbolic AI, exploring how the combination of foundation models, formal reasoning, and structured commonsense knowledge, such as knowledge graphs, can overcome key limitations of current AI methods for robotics. Although Large Language Models (LLMs) have achieved remarkable progress in language understanding, multimodal perception, and planning, supported by techniques such as chain-of-thought prompting and retrieval-augmented generation, they still lack persistent structured memory and formal guarantees of logical consistency. As a result, they remain prone to hallucinations and unreliable long-horizon reasoning in complex, safety-critical robotic environments. The workshop highlights the synergy between foundation models and symbolic AI. Neural models provide powerful perception and generation capabilities, while symbolic reasoning, supported by knowledge graphs and formal logic, ensures explainability, logical consistency, and safety guarantees, leading to hybrid AI systems that are both effective and trustworthy. Despite growing interest, the integration of neural models, LLMs, and symbolic knowledge into unified neuro-symbolic robotic architectures remains in its early stages. The program will include six invited expert talks, presentations by young researchers and PhD students, a poster session, and interactive discussions aimed at fostering collaboration and advancing research on the integration of foundation models, structured knowledge, and formal reasoning for intelligent robotic systems.</p>
+          <a class="go" href="https://www.lissi.fr/iros-ar2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Bridging the Gap between Robotic Matter and Active Metamaterials</span><span class="ttag tactile">Tactile</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 413</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 413</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Robotic matter, active metamaterials, and soft robots are increasingly converging toward a new class of robotic systems whose capabilities arise from the tight coupling of mechanics, materials, embodiment, and distributed control. In these systems, functionality emerges from computation and actuation as well as from local interactions, physical structure, and programmable material response. This half-day workshop will bring together researchers across robotics, materials science, mechanics, and physics to explore the foundational principles that govern such systems and to define a common framework for understanding robotic matter and active metamaterials as an emerging direction in robotics. Topics will include self-organizing robot collectives, programmable mechanical and material properties, morphologically adaptive locomotion, embodied sensing, and robotic systems that exhibit phase-like transitions, collective responses, and environment-dependent behaviors. Compared to the similar past events, our intention with this workshop is to highlight the growing integration of swarm robotics, soft robotics, and metamaterials into a unified vision for adaptive and self-organizing robotic systems. The program will include invited talks from established leaders and rising researchers, a poster and demonstration session, and a panel discussion on key challenges and future opportunities. By connecting communities that often evolve in parallel, the workshop will foster new collaborations, reveal the shared principles across the disciplines we have invited, and help shape the future of robotic systems that increasingly blur the boundary between robots and materials.</p>
+          <a class="go" href="https://www.lisglab.com/iros26workshop" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Learning and Formal Methods for Robotics (LAFR)</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 412</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 412</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Robots are increasingly powered by learned perception, prediction, and decision models. Recent progress in reinforcement learning and robotic foundation models has further amplified this trend. However, guaranteeing safety and verifying the behaviors of learned models is difficult, due to, for example, the use of deep neural networks and the potential for hallucinations. Reliable deployment of robots requires explicit guarantees about safety and task satisfaction. Formal methods&mdash;a set of rigorous techniques for specifying, analyzing, and verifying systems&mdash;offer a framework for considering such problems. This workshop focuses on two complementary viewpoints at the interface of learning and formal methods: learning for formal methods and learning with formal methods. Learning for formal methods studies how data-driven techniques can provide the missing ingredients that formal synthesis and verification often assume, including specifications and constraints inferred from demonstrations, preferences, or language, as well as abstractions, uncertainty sets, and conservative models that enable provable reasoning. Learning with formal methods studies how formal tools can guide and constrain learning, for example, through specification-aware training, verification, and certification of learned components, and runtime monitoring and shielding. We bring together researchers from various disciplines&mdash;including robot learning, formal methods, planning, controls, safety, and multi-robot systems&mdash;to share past work, recent advances, and open problems in this exciting research area. The workshop will consist of a diverse set of invited talks and poster sessions. We hope to identify new research directions, open problems, and interdisciplinary perspectives that bridge these two fields and lead to new advances in robotics.</p>
+          <a class="go" href="https://lafr-workshop.github.io/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">AI and the Verification of Autonomous Systems</span><span class="ttag vla">VLA</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 411</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 411</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">This workshop addresses the critical challenge of verifying autonomous systems that incorporate artificial intelligence, with particular attention to recent advances in foundation models, large language models (LLMs), and generative AI. Our objectives are to: Assess the current state: Document verified successes where AI-enabled autonomy has been rigorously validated, and candidly examine failures where verification approaches proved insufficient or where AI introduced unforeseen risks. Identify open problems: Characterize gaps in current verification methodologies, including challenges unique to neural network-based perception, LLM-driven planning, and hybrid classical-learning architectures. Develop best practices: Establish preliminary guidelines for practitioners deploying AI in safety-critical autonomous systems, drawing from formal methods, runtime monitoring, and empirical validation approaches. Map the solution space: Determine when traditional non-AI autonomy remains advantageous from a verification perspective, and clarify how AI verification techniques (adversarial robustness, uncertainty quantification, interpretability) integrate with systems-level safety assurance. Reframe uncertainty: Explore whether AI constitutes a fundamentally new category of uncertainty requiring novel theoretical frameworks, or whether existing stochastic and epistemic uncertainty models can be extended.</p>
+          <a class="go" href="https://sites.google.com/view/vas-iros-workshop/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Data in Field Robotics: From State Estimation to Navigation</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 317 &amp; 318</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 317 &amp; 318</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Mobile robots, including legged robots, humanoids, and drones, are increasingly deployed in unstructured and demanding environments&mdash;from scaling rubble and inspecting industrial facilities to navigating disaster zones. These open-ended tasks require robustness to terrain, resilience under degraded sensing, and adaptability to diverse task complexity. On the path to maturity in mobile robotics, data and benchmarks have proven to be the core driving factor, as demonstrated in autonomous driving. There, large-scale datasets and task-specific benchmarks have propelled tasks such as localization, mapping and detection to reach remarkable levels of precision. However, for mobile robots in the field, we are still missing this ecosystem. Unlike passenger vehicles, collecting data in the field with these platforms poses significant challenges. The cost of collecting data is high, and these platforms cannot easily carry the full payload of sensors and ground-truth systems. This raises several key open questions: What kind of datasets will have lasting impact and be most useful for robotics? Which sensors are truly essential to capture the task complexity of these platforms? What level of calibration and ground-truth effort is required to advance research in these tasks? Most importantly: how do we design benchmarks that are apt for the unique tasks and failure modes of these robots beyond navigation on suburban streets? This workshop will bring together researchers from robotics, computer vision, and machine learning to define principles for the next generation of datasets and benchmarks. By rethinking dataset and benchmark design in light of the distinct requirements of embodied intelligence, we aim to accelerate progress not only in localization, but also in perception, mapping, and long-term autonomy in the wild.</p>
+          <a class="go" href="https://jonasfrey96.github.io/data_in_field_robotics/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Learning-to-Optimize for Control in Robotics</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Rooms 408 &amp; 409</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Rooms 408 &amp; 409</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">This tutorial introduces Learning-to-Optimize methods for accelerating optimization-based robotic planning and control. Topics will include parametric solution learning, algorithm unrolling, model predictive control, sampling-based control, controller adaptation, and practical robotic applications.</p>
+          <a class="go" href="https://ctrl-l2o-iros2026.github.io/Ctrl-L2O-IROS2026/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+      <details class="wsd">
+        <summary>
+          <span><span class="st">Multi-Robot Systems at Scale: Challenges and Opportunities</span><span class="sm">Half Day &middot; 1:30 PM&ndash;5:30 PM &middot; Room 301</span></span>
+          <span class="chev" aria-hidden="true">+</span>
+        </summary>
+        <div class="body">
+          <div class="meta2"><span>Thu 1 Oct</span><span><b>Room 301</b></span><span><b>Half Day &middot; 1:30 PM&ndash;5:30 PM</b></span></div>
+          <p class="ab">Multi-Robot Systems (MRS) have seen real-world success across academia (such as DARPA SubT and OFFSET programs) and in industry, including Amazon and Serve Robotics. Recently, MRS research has reached an inflection point: Do we still need to constrain MRS to decentralized settings? Will generative AI change how MRS are designed and deployed? What role should humans play in MRS? Up to this point, MRS research has produced many algorithms and theoretical results, however, unified system-level solutions are still necessary for large-scale, reliable deployments outside highly structured domains. This half-day workshop aims to examine why this gap persists and what research directions are required to close it. To this end, we convene leading researchers and practitioners to reflect on the history of MRS, assess the current state of the field, and identify the scientific and engineering challenges that must be addressed to enable robust, scalable multi-robot systems in real-world environments. Speakers and panelists have been specifically selected for their willingness to offer a critical, evidence-based perspective on the future of MRS. The workshop will begin with 2 short invited talks that set the stage for a moderated panel of 4-5 leaders from academia and industry, discussing unresolved bottlenecks and potential breakthroughs over 5-, 10-, and 15-year horizons. Structured breakout groups will then focus on 3-5 themes, identifying key barriers and concrete milestones for progress. The workshop will conclude with a synthesis session, and organizers will distill the discussions into a publicly available MRS Research Roadmap summarizing key challenges and benchmarks.</p>
+          <a class="go" href="https://mrs2026.github.io/MRS26/" target="_blank" rel="noopener">Workshop site &rarr;</a>
+        </div>
+      </details>
+    </div>
+</section>
+
 
 <div class="stats">
   <div class="stat"><span class="v">348</span><span class="k">Sessions</span></div>
